@@ -1,0 +1,34 @@
+.wrap {
+
+  background-color: #520F38;
+  background-image: url("../img/bg/poster@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg/poster@2x.jpg");
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .wrap {
+    background-image: none;
+  }
+}
+
+@media  screen and (min-width: 1440px) {
+  .wrap {
+    background-position: right bottom;
+  }
+}
+
+.wrap .circus-img {
+  display: none;
+}
+
+@media  screen and (max-width: 554px) {
+  .wrap .circus-img {
+    display: block;
+  }
+}

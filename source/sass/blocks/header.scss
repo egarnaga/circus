@@ -1,10 +1,16 @@
 .header {
+  position: relative;
+  z-index: 10;
+
   display: flex;
   align-items: center;
-  min-height: 100px;
-  padding: 0 40px;
-
-  background-color: $color-blue;
+  min-height: 74px;
+  width: 1360px;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
 
   &__wrapper {
     display: flex;
@@ -13,24 +19,112 @@
 
   a,
   p {
-    color: $color-white;
+    color: #FBD189;
   }
 
   ul {
     display: flex;
     margin: 0;
     margin-right: 20px;
-    margin-left: 60px;
+    margin-left: 107px;
     padding: 0;
 
     list-style: none;
 
     li {
-      margin-right: 20px;
+      margin-right: 40px;
     }
   }
 
   .main-nav__toggle {
     display: none;
+  }
+}
+
+.header__phone {
+  margin-left: auto;
+  padding-bottom: 10px;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header__phone:hover {
+  opacity: 0.8;
+}
+
+.header__phone:active {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 864px) {
+  .header__phone {
+    padding-bottom: 5px;
+
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__phone {
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header__phone {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .header {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .header {
+    min-height: 54px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .header__logo-image {
+    position: relative;
+    width: 80px;
+
+    z-index: 20;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header ul {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .header ul li {
+    margin-right: 20px;
   }
 }

@@ -76,34 +76,31 @@
   </div>
 
   <div class="wrapper">
-    <header class="header ">
-  <div class="header__wrapper">
-    <a class="header__logo"  href="main.html" aria-label="Переход на главную">
-      Логотип
-    </a>
+    <header class="header">
+  <a class="header__logo">
+    <!-- 1x: 109px; 2x: 218px -->
+    <img class="header__logo-image logo-menu--closed logo-menu" src="img/content/logo@1x.png" srcset="img/content/logo@1x.png 1x, img/content/logo@2x.png 2x"  alt="Логотип">
+  </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-        <svg width="20" height="20">
-          <use xlink:href="#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link "  href="#" >Страница 1</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link "  href="#" >Страница 2</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link "  href="#" >Страница 3</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--announcement">
+          <a class="site-list__link" href="#">Анонс</a>
+        </li>
+        <li class="site-list__item site-list__item--gallery">
+          <a class="site-list__link" href="#">Галерея</a>
+        </li>
+        <li class="site-list__item site-list__item--contacts">
+          <a class="site-list__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <a class="header__phone" href="tel:+89507815569">+7 (950) 781-55-69</a>
+ </header>
 
 
     <main>

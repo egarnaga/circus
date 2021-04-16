@@ -26,7 +26,7 @@
 
 <link rel="stylesheet" href="css/style.min.css">
 
-  <title>ProjectName — Главная</title>
+  <title>Звёзды Сибири</title>
 
 </head>
 <body>
@@ -36,82 +36,87 @@
   </div>
 
   <div class="wrapper">
-    <header class="header ">
-  <div class="header__wrapper">
-    <a class="header__logo"  aria-label="Переход на главную">
-      Логотип
-    </a>
+    <div class="wrap">
+      <header class="header">
+  <a class="header__logo">
+    <!-- 1x: 109px; 2x: 218px -->
+    <img class="header__logo-image logo-menu--closed logo-menu" src="img/content/logo@1x.png" srcset="img/content/logo@1x.png 1x, img/content/logo@2x.png 2x"  alt="Логотип">
+  </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-        <svg width="20" height="20">
-          <use xlink:href="#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link "  href="#" >Страница 1</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link "  href="#" >Страница 2</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link "  href="#" >Страница 3</a>
-          </li>
-        </ul>
+  <nav class="main-nav main-nav--closed main-nav--nojs">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--announcement">
+          <a class="site-list__link" href="#">Анонс</a>
+        </li>
+        <li class="site-list__item site-list__item--gallery">
+          <a class="site-list__link" href="#">Галерея</a>
+        </li>
+        <li class="site-list__item site-list__item--contacts">
+          <a class="site-list__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <a class="header__phone" href="tel:+89507815569">+7 (950) 781-55-69</a>
+ </header>
+
+      <div class="container">
+
+
+        <div class="description">
+          <div class="description__wrap">
+            <div class="description__text">
+              <img src="img/svg/date-and-time.svg" alt="25 апреля, 17:00, воскресенье">
+              <p class="description__paragraph">ДК «Красной гвардии»</p>
+              <h1>
+                <span class="description__desc">Цирковое шоу</span>
+                <span class="description__name">«Звёзды Сибири»</span>
+              </h1>
+            </div>
+
+            <div class="description__btn">
+              <a href="tel:+89507815569">Позвонить</a>
+            </div>
+
+
+          </div>
+        </div>
       </div>
-    </nav>
-  </div>
-</header>
+      <!-- 1x: 859px; 2x: 1718px -->
+      <img class="circus-img" src="img/bg/poster2@1x.jpg" srcset="img/bg/poster2@1x.jpg 1x, img/bg/poster2@2x.jpg 2x"  alt="Артистка на арене цирка">
+    </div>
 
 
     <main>
       <div class="container">
-        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-        <p><a href="#" data-modal="success">modal--success link</a></p>
+        <section class="announcement"></section>
       </div>
+
+      <section class="carousel">
+        <!-- 1x: 1440px; 2x: 2880px -->
+        <img src="img/content/carousel@1x.jpg" srcset="img/content/carousel@1x.jpg 1x, img/content/carousel@2x.jpg 2x"  alt="Карусель">
+      </section>
+
+      <div class="container">
+        <section class="gallery"></section>
+      </div>
+
+      <section class="clown">
+        <!-- 1x: 1440px; 2x: 2880px -->
+        <img src="img/content/clown@1x.jpg" srcset="img/content/clown@1x.jpg 1x, img/content/clown@2x.jpg 2x"  alt="Клоун">
+      </section>
+
+      <div class="container">
+        <section class="contacts"></section>
+      </div>
+
     </main>
 
     <footer class="footer"></footer>
 
-
-    <div class="modal modal--preload modal--feedback    ">
-  <div class="modal__wrapper">
-    <div class="modal__overlay"></div>
-    <div class="modal__content">
-
-      <p class="modal__description">Обычная модалка</p>
-
-
-      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
-        <svg width="15" height="15">
-          <use xlink:href="#icon-close"></use>
-        </svg>
-      </button>
-
-    </div>
-  </div>
-</div>
-
-
-    <div class="modal modal--preload modal--success   modal--fit-content   modal--no-scale   modal--some-mod ">
-  <div class="modal__wrapper">
-    <div class="modal__overlay"></div>
-    <div class="modal__content">
-
-      <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл и передан модификатор `some-mod`</p>
-
-
-      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
-        <svg width="15" height="15">
-          <use xlink:href="#icon-close"></use>
-        </svg>
-      </button>
-
-    </div>
-  </div>
-</div>
 
   </div>
 

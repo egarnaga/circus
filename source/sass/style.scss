@@ -17,7 +17,18 @@
 // Blocks
 //---------------------------------
 
+@import "blocks/wrap";
 @import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/description";
+
+@import "blocks/announcement";
+@import "blocks/carousel";
+@import "blocks/gallery";
+@import "blocks/clown";
+@import "blocks/contacts";
+
 @import "blocks/footer";
 @import "blocks/modal";
 

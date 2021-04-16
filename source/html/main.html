@@ -3,7 +3,7 @@
 <head>
 
   @@include("source/html/base/head.html")
-  <title>ProjectName — Главная</title>
+  <title>Звёзды Сибири</title>
 
 </head>
 <body>
@@ -13,29 +13,64 @@
   </div>
 
   <div class="wrapper">
-    @@include("source/html/base/header.html", {
-      "main": true
-    })
+    <div class="wrap">
+      @@include("source/html/base/header.html", {
+        "main": true
+      })
+      <div class="container">
+
+
+        <div class="description">
+          <div class="description__wrap">
+            <div class="description__text">
+              <img src="img/svg/date-and-time.svg" alt="25 апреля, 17:00, воскресенье">
+              <p class="description__paragraph">ДК «Красной гвардии»</p>
+              <h1>
+                <span class="description__desc">Цирковое шоу</span>
+                <span class="description__name">«Звёзды Сибири»</span>
+              </h1>
+            </div>
+
+            <div class="description__btn">
+              <a href="tel:+89507815569">Позвонить</a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- 1x: 859px; 2x: 1718px -->
+      <img class="circus-img" src="img/bg/poster2@1x.jpg" srcset="img/bg/poster2@1x.jpg 1x, img/bg/poster2@2x.jpg 2x"  alt="Артистка на арене цирка">
+    </div>
+
 
     <main>
       <div class="container">
-        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-        <p><a href="#" data-modal="success">modal--success link</a></p>
+        <section class="announcement"></section>
       </div>
+
+      <section class="carousel">
+        <!-- 1x: 1440px; 2x: 2880px -->
+        <img src="img/content/carousel@1x.jpg" srcset="img/content/carousel@1x.jpg 1x, img/content/carousel@2x.jpg 2x"  alt="Карусель">
+      </section>
+
+      <div class="container">
+        <section class="gallery"></section>
+      </div>
+
+      <section class="clown">
+        <!-- 1x: 1440px; 2x: 2880px -->
+        <img src="img/content/clown@1x.jpg" srcset="img/content/clown@1x.jpg 1x, img/content/clown@2x.jpg 2x"  alt="Клоун">
+      </section>
+
+      <div class="container">
+        <section class="contacts"></section>
+      </div>
+
     </main>
 
     @@include("source/html/base/footer.html")
 
-    @@include("source/html/base/modal.html", {
-      "name": "feedback"
-    })
-
-    @@include("source/html/base/modal.html", {
-      "name": "success",
-      "fitContent": true,
-      "noScale": true,
-      "mod": "some-mod"
-    })
   </div>
 
   <script src="js/vendor.min.js"></script>
