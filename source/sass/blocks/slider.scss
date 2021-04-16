@@ -1,0 +1,146 @@
+
+.slider__container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+.slider__slide {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 1280px) {
+  .slider__slide img {
+    width: 65%;
+  }
+}
+
+.slider__pagination {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  max-width: 180px;
+  margin-top: 20px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.slider__pagination span {
+  position: relative;
+  display: flex;
+
+  width: 20px;
+  height: 20px;
+
+  line-height: 0;
+
+  opacity: 1;
+  background-color: #FF9C5B;
+  border: 2px solid #520F38;
+
+  outline: none;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  transition: all 0.3ms;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet:hover {
+  opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%,-50%);
+
+  width: 10px;
+  height: 10px;
+
+  background-color: #FBD189;
+  border-radius: 100%;
+
+}
+
+.slider__button-prev {
+
+  width: 79px;
+  height: 43px;
+
+  color: transparent;
+
+  background-image: url("../img/bg/arrow-left@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg/arrow-left@2x.png");
+  }
+}
+
+.slider__button-next {
+
+  width: 79px;
+  height: 43px;
+
+  color: transparent;
+
+  background-image: url("../img/bg/arrow-right@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg/arrow-right@2x.png");
+  }
+}
+
+.slider__button-prev:hover,
+.slider__button-next:hover {
+  opacity: 0.8;
+}
+
+
+@media screen and (max-width: 1280px) {
+  .slider__button-prev,
+  .slider__button-next {
+    width: 50px;
+    height: 28px;
+    background-position: center center;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .slider__button-prev,
+  .slider__button-next {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 703px) {
+  .slider__button-prev,
+  .slider__button-next {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .slider__button-prev,
+  .slider__button-next {
+    display: none;
+  }
+}
