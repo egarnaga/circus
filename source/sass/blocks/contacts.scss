@@ -132,8 +132,6 @@
   margin-bottom: 2%;
 }
 
-
-
 .contacts__phones a {
   position: relative;
   margin-bottom: 1%;
@@ -180,4 +178,10 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 18px 18px;
+}
+
+
+.contacts__phones a:hover,
+.contacts__phone-ticket a:hover {
+  opacity: 0.8;
 }

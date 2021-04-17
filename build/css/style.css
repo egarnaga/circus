@@ -1992,10 +1992,28 @@ button,
   background-position: 0 0;
   background-size: 18px 18px; }
 
+.contacts__phones a:hover,
+.contacts__phone-ticket a:hover {
+  opacity: 0.8; }
+
 .footer {
-  min-height: 30px;
-  padding: 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #FBD189;
   background-color: #520F38; }
+
+.footer a {
+  color: #FBD189;
+  border-bottom: 1px solid #FBD189; }
+
+.footer a:hover {
+  opacity: 0.8; }
 
 .modal {
   position: fixed;
