@@ -1,0 +1,44 @@
+.animation-balloon {
+  display: block;
+}
+
+.animation-balloon__img {
+  position: absolute;
+  right: .5rem;
+  top: 2rem;
+  transition: .3s opacity ease-out;
+}
+
+.container-animation .animation-balloon__img {
+  width: 15vw;
+  height: 27.225vw;
+  max-width: 6.25rem;
+  max-height: 11.3125rem;
+}
+
+
+.container-animation .animation-balloon__img {
+  pointer-events: none;
+  width: auto;
+  height: calc((60vh - 2rem)/ 1.6);
+  top: 36%;
+  left: 1vw;
+  right: auto;
+  animation-duration: 180s;
+  animation-name: balloonFloat;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .container-animation .animation-balloon__img {
+      display: none;
+  }
+}
+
+@keyframes balloonFloat {
+  from {
+      transform: translate(-7vw, 30%);
+  }
+  to {
+      transform: translate(100vw, -52%);
+  }
+}
